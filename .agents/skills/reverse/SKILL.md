@@ -32,4 +32,6 @@ Essas fontes são opcionais. O fluxo padrão estuda materiais existentes e compo
 
 Use a [estrutura do estudo](estudo.md). Faça cada afirmação relevante remeter à evidência; faça cada etapa do roteiro remeter à regra que a motiva. Uma escolha de arquitetura da recriação deve aparecer como decisão proposta. Quando uma falha impedir a análise, registre fonte afetada, motivo e a conclusão que permanece em aberto.
 
+A conclusão inicial deve ter o mesmo grau de certeza da ficha. Se o texto reaparece após reabrir offline, o fato observado é a disponibilidade do texto naquela reabertura; o mecanismo de armazenamento e a sobrevivência ao encerramento do processo exigem evidência própria.
+
 Antes de entregar, percorra o caminho inverso: escolha cada teste de aceitação, encontre sua regra e confirme que o localizador leva à evidência correspondente. Testes baseados em suposição devem aparecer como proposta ou pergunta. Identifique lacunas que mudariam o roteiro e a menor observação que poderia resolvê-las.
