@@ -16,6 +16,8 @@ Abra com a conclusão mais útil para quem vai recriar o produto. Identifique ve
 4. Escreva o roteiro desta jornada em ordem de dependência: elementos e modelo de dados mínimos, transições a implementar, integrações ou substitutos locais, decisões em aberto e marcos verificáveis. Relacione cada etapa às regras R. Para uma jornada parcial, identifique as etapas condicionais.
 5. Para cada regra que muda o resultado, inclua um teste com estado inicial, ação, resultado esperado e evidência de referência. Marque separadamente testes sugeridos e executados. Se houver um cenário reservado, registre a previsão antes de consultá-lo e anote o resultado.
 
+Ao fechar a ficha, registre em uma linha a contribuição da fase REA: pergunta investigada, evidência obtida e efeito sobre a regra ou o teste. Quando a fase for dispensável ou estiver indisponível, indique o motivo e a lacuna relevante. Referencie pelo ID qualquer análise compartilhada entre jornadas.
+
 ## Índice de evidências e continuidade
 
 Cada F aponta para fonte, versão ou data, localizador e fato específico. Em fonte derivada, identifique o registro pai. Guarde referências reproduzíveis sem copiar conteúdo pessoal. Encerre com prioridades de recriação, dependências entre jornadas e a próxima verificação que melhor resolveria uma incerteza relevante.

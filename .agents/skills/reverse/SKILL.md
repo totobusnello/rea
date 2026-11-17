@@ -15,6 +15,14 @@ Ao receber um produto, URL ou conjunto de materiais, entregue um estudo utilizá
 4. Para cada regra importante, registre a fonte e um localizador preciso (instante, evento, arquivo e símbolo, operação e resposta). Qualifique a afirmação como observada, derivada, inferida ou desconhecida. A presença de código indica um comportamento possível. Confirmação de execução requer um evento compatível com o mesmo cenário e versão. Documente divergências sem escolher uma versão por conveniência.
 5. Escolha a fonte de menor custo que resolva a próxima dúvida. Consulte resumos antes de abrir detalhes. Se faltar uma fonte, conclua a parte sustentada e registre o efeito da lacuna. Evidência num pacote de versão desconhecida não confirma a versão vista em tela. Para dados e integrações, diferencie entidade visível, operação observada e implementação interna proposta.
 
+## Fase técnica com REA
+
+Depois de mapear a jornada e antes de fechar suas regras, identifique a dúvida técnica que poderia mudar o roteiro de recriação. Quando houver um artefato pertinente e a ferramenta estiver disponível na sessão, use a REA diretamente como parte da investigação. O usuário inicia apenas a skill reverse.
+
+Escolha a consulta pelo que ela pode demonstrar. Por exemplo, para saber quais estados de um pedido aparecem no contrato fornecido, consulte a operação correspondente com `inspect_api_contract`. Para saber qual módulo do pacote trata uma ação da interface, use a análise estática de aplicação disponível. Confira o esquema da ferramenta conectada e vincule o resultado à regra da jornada, citando a fonte, a versão conhecida e o localizador retornado. Um estado declarado no contrato só ganha o rótulo de observado em execução quando houver evidência dessa execução.
+
+Reaproveite resultados existentes do mesmo artefato e versão. Encerre a fase quando a pergunta tiver resposta ou quando as fontes disponíveis não permitirem avançar. Com material apenas visual, prossiga para a especificação e indique qual dúvida técnica ficou aberta, se houver.
+
 ## Escolher fontes
 
 | Fonte disponível | Contribuição e limite |
