@@ -1,10 +1,16 @@
 # Plano de evolução do REA para análise de aplicações e sistemas
 
-Base examinada em 17/11/2026, commit `3f361d820fd4a54e037bf60726e79217586ad431`. Este documento propõe trabalho futuro. As metas abaixo são critérios de decisão e ainda precisam de medição.
+Base examinada em 17/11/2026, commit `3f361d820fd4a54e037bf60726e79217586ad431`. O fork agora inclui a [skill reverse](../../.agents/skills/reverse/SKILL.md). As metas de eficiência e cobertura abaixo ainda precisam de medição.
 
 ## O que aproveitar do projeto
 
 O REA já [importa traces Playwright v10](../playwright-traces.md), retém a evidência completa e permite consultar eventos específicos. O [avaliador de cobertura](../reconstruction-coverage.md) já registra dependências, contradições e lacunas. A [composição de capacidades](../capability-composition.md) separa contratos, provedores e interfaces CLI/MCP. Começaria pela skill: transformar uma pergunta sobre comportamento numa sequência curta de consultas e numa explicação verificável. Só acrescentaria um contrato ao servidor depois de demonstrar uma lacuna repetível.
+
+## Produto entregue pela skill
+
+O resultado é um estudo das especificações e dos elementos do produto e um roteiro para recriar cada jornada. O relatório liga elemento, regra, evidência, decisão de implementação e teste de aceitação. Uma equipe pode verificar a origem da regra e identificar onde tem liberdade para projetar sua própria solução. A [estrutura do relatório](../../.agents/skills/reverse/estudo.md) define as fichas, o índice de evidências e a cobertura das jornadas parciais.
+
+A primeira implementação é uma skill independente de provedores. Para usar a versão do fork, copie a pasta inteira `.agents/skills/reverse` deste branch para a pasta de skills pessoais do cliente, preservando o nome `reverse`. No Claude Code use `~/.claude/skills/reverse` e invoque `/reverse`; no Codex use `~/.agents/skills/reverse` e invoque `$reverse`. Os materiais de tela e as fontes técnicas podem ser combinados conforme a pergunta. Os critérios deste plano medem a fidelidade do estudo e a utilidade do roteiro. Construir o produto é uma decisão posterior.
 
 ## Caso piloto
 
@@ -37,4 +43,4 @@ A saída deve mostrar o gesto, o evento de interface, a operação local, a cham
 
 Fixar a versão do cliente, modelo, ferramentas, entradas e orçamento. Rodar as versões atual e candidata com os mesmos casos, alternando a ordem e separando execuções frias e com reuso. Calcular cobertura dividindo ligações corretas demonstradas pelas ligações demonstráveis do gabarito. Contar à parte afirmações falsas, desconhecidos corretamente preservados, chamadas, tempo e tokens realmente reportados pelo cliente. Quando uma métrica estiver indisponível, registrá-la como tal. O [guia de avaliação do catálogo](../mcp-catalog-evaluation.md) explica as condições do ensaio no Codex.
 
-Primeira entrega de código proposta: um caso web de salvamento offline, gabarito versionado e relatório comparativo da skill atual com a nova instrução de diagnóstico. Esse resultado determina se vale investir primeiro em correlação de fontes, cobertura por plataforma ou redução de custo.
+Próxima etapa de avaliação: comparar os relatórios do piloto com o gabarito, incluindo um cenário reservado de reabertura offline. Medir também quantas regras sustentadas possuem roteiro e teste rastreáveis e quantas lacunas foram corretamente preservadas. O resultado orienta o próximo investimento em correlação de fontes, cobertura por plataforma ou redução de custo.
